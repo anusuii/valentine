@@ -3,89 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Valentine 💖</title>
+<title>My Valentinee </title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .card {
-        background: white;
-        width: 90%;
-        max-width: 380px;
-        padding: 25px;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        position: relative;
-    }
+.card {
+    background: white;
+    width: 90%;
+    max-width: 380px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
 
-    h1 {
-        color: #e63946;
-        font-size: 26px;
-    }
+h1 {
+    color: #e63946;
+    font-size: 26px;
+}
 
-    p {
-        font-size: 16px;
-        color: #444;
-        margin: 10px 0;
-    }
+p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
 
-    .gallery {
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        margin: 15px 0;
-    }
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
 
-    .gallery img {
-        width: 100px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 15px;
-        flex-shrink: 0;
-    }
+.gallery img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
 
-    .buttons {
-        margin-top: 20px;
-        position: relative;
-        height: 60px;
-    }
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
 
-    button {
-        padding: 12px 22px;
-        font-size: 15px;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-    }
+button {
+    padding: 12px 22px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
 
-    #yes {
-        background: #e63946;
-        color: white;
-    }
+#yes {
+    background: #e63946;
+    color: white;
+}
 
-    #no {
-        background: #ddd;
-        position: absolute;
-        right: 0;
-    }
+#no {
+    background: #ddd;
+}
 </style>
 </head>
 
 <body>
 
 <div class="card">
-    <h1>Hey My Love ❤️</h1>
+    <h1>Heloo baby :3 </h1>
 
     <p>
-        Every moment with you is my favorite 🥹✨  
+        Every moment with you is my favorite   
         I can’t imagine my world without you.
     </p>
+
+    <!-- PHOTO GALLERY -->
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+
+    <p><b>Will you be my Valentineee? 💘</b></p>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+        <button id="yes" onclick="yesClicked()">Yesss </button>
+        <button id="no" onclick="noClicked()">No >.<</button>
+    </div>
+</div>
+
+<script>
+function yesClicked() {
+    document.body.innerHTML = `
+    <div style="
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        height:100vh;
+        background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+        font-family:'Segoe UI',sans-serif;">
+        <h1 style="color:#e63946;">YAY!!! </h1>
+        <p style="font-size:20px;">You just made me the happieststststst </p>
+        <p>Happy Valentine’s Day, my love <3 </p>
+    </div>`;
+}
+
+function noClicked() {
+    alert("Hehe :3 you can't say no!");
+}
+</script>
+
+</body>
+</html>
